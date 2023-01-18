@@ -10,7 +10,6 @@ import SwiftUI
 struct GridItemView: View {
     let size: Double
     let url: String
-    
     var body: some View {
         VStack {
             AsyncImage(url: URL(string: url)) { image in
@@ -27,6 +26,6 @@ struct GridItemView: View {
 
 struct GridItemView_Previews: PreviewProvider {
     static var previews: some View {
-        GridItemView(size: 50, url: "https://picsum.photos/id/1/5000/3333")
+        GridItemView(size: 150, url: "https://picsum.photos/id/1/5000/3333")
     }
 }
